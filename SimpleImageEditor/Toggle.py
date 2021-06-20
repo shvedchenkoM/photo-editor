@@ -13,7 +13,6 @@ class Toggle(UIButton, UIElement):
         UIButton.__init__(self, relative_rect=relative_rect, text=self.first_text, manager=manager)
         self.showed_text = self.first_text
         self._click_count = 0
-
     def update(self, time_delta: float):
         UIElement.update(self, time_delta)
         if self.alive():
