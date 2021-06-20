@@ -1,6 +1,5 @@
 '''
-    Controller is used for implement
-
+    Controller is used for implementing logic of imposing effects on images uploaded by the user.
 '''
 from PIL import Image
 from PIL import ImageEnhance

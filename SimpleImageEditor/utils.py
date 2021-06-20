@@ -1,4 +1,6 @@
-import os
+'''
+check for normal opening files from file maneger
+'''
 
 class Utils:
     def __init__(self):

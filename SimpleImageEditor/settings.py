@@ -1,3 +1,6 @@
+'''
+Some inportant constants
+'''
 Height = int(720 / 1.5)
 Width = int(1280 / 1.5)
 DisplayHeight = 768

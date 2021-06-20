@@ -1,3 +1,7 @@
+'''
+One scene for UI
+'''
+
 import pygame
 import pygame_gui
 import settings

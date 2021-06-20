@@ -1,3 +1,7 @@
+'''
+Initializing of all scenes
+'''
+
 from Scene import Scene
 
 import pygame

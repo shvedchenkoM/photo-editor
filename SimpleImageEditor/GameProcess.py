@@ -1,3 +1,7 @@
+'''
+Implementing logic of game processing here.
+'''
+
 import os
 import pygame
 import pygame_gui
@@ -24,6 +28,7 @@ class GameProcess:
         self.window_surface = window_surface
         self.background = background
 
+    # deal with state, when exit button is clicked
     def _on_exit(self):
         self.is_running = False
         self.original_image_path = ""
@@ -40,6 +45,7 @@ class GameProcess:
             os.remove("contrast." + self.image_path.split(".")[-1])
         self.image_path = ""
 
+# update after using all (any) effects on all scenes
     def _update_image(self):
         work_scene.add_image(self.image_path, settings.Image_position, settings.Image_scale,
                              "image")
@@ -184,7 +190,7 @@ class GameProcess:
                                              settings.Image_position,
                                              settings.Image_scale, "image")
 
-        ...
+
 
     def check_color_scene(self, event):
         if event.ui_element == self.scene.buttons["exit"]:

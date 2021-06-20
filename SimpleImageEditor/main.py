@@ -1,3 +1,7 @@
+'''
+Start of the application
+'''
+
 import pygame
 import pygame_gui
 import easygui
